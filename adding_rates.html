@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Module - Core Systems</title>
+    <style>
+        /* --- General Reset & Typography (Same as Home) --- */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a { text-decoration: none; color: inherit; }
+
+        /* --- Header (Simplified) --- */
+        header {
+            background-color: #4b0082; /* Deep Purple */
+            color: white;
+            padding: 20px 20px; /* Slightly smaller than home */
+            text-align: center;
+        }
+
+        header h1 { margin: 0; font-size: 1.8rem; letter-spacing: 1px; }
+
+        /* --- Main Content Container (One Column) --- */
+        .page-container {
+            max-width: 900px; /* Limits width for better readability */
+            margin: 40px auto; /* Centers the container */
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-top: 5px solid #6a0dad;
+        }
+
+        /* --- Navigation / Back Button --- */
+        .nav-bar {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .back-btn {
+            color: #4b0082;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .back-btn:hover { text-decoration: underline; }
+
+        /* --- Typography for Content --- */
+        h2 { color: #4b0082; margin-top: 0; }
+        h3 { color: #555; border-left: 4px solid #6a0dad; padding-left: 10px; margin-top: 30px;}
+        p { margin-bottom: 20px; }
+
+        /* --- Responsive Video Wrapper --- 
+           This makes sure your embedded video resizes perfectly on mobile
+        */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            background: #000;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* --- Action List / Downloads --- */
+        .action-box {
+            background-color: #f4eaff; /* Very light purple bg */
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .action-box ul { margin: 0; padding-left: 20px; }
+        .action-box li { margin-bottom: 10px; }
+        .action-box a { color: #4b0082; font-weight: bold; }
+        .action-box a:hover { text-decoration: underline; }
+
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 768px) {
+            .page-container {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Core Systems Training</h1>
+    </header>
+
+    <div class="page-container">
+        
+        <div class="nav-bar">
+            <a href="index.html" class="back-btn">← Back to Dashboard</a>
+        </div>
+
+        <h2>Solartis Builder: Adding Rates</h2>
+
+        <div class="video-wrapper">
+            <iframe src="https://drive.google.com/file/d/17dnaTkht5f961s8zer2ljzVwWg0-7ADj/preview" width="640" height="480" allow="autoplay"></iframe>
+        </div>
+
+              <h3>Key Steps</h3>
+        <p>
+            1. Login to Solartis Builder<br>
+            2. Click Rate Table<br>
+            3. Search for Appropriate Rate Table<br>
+            4. Check Off All Rate Tables That You Want to Update<br>
+            5. Click Folder Icon Above Rate Table List, and Select Export<br>
+            6. Add Values to All Applicable Fields (note: for date format should match '01/01/2024)<br>
+            7. Do Not Add Values for CHANGE_VERSION, PRIORITY, CREATED_BY, CREATED_DATE, UPDATED_DATE, STATUS <br>
+            8. Input "Add" as CHANGE TYPE Reason <br>
+        </p>
+
+        <div class="action-box">
+            <strong>📂 Related Documents:</strong>
+            <ul>
+                <li><a href="solartis_add_rates.pdf" target="_blank">Solartis Add Rates Instructions</a></li>               
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>

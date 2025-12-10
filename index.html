@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Systems Training</title>
+    <style>
+        /* --- General Reset & Typography --- */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* --- 1. Header Section --- */
+        header {
+            background-color: #4b0082; /* Deep Purple */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* --- 2. Important Links Section --- */
+        .important-links {
+            background-color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 4px solid #ddd;
+        }
+
+        .important-links h2 {
+            color: #4b0082;
+            margin-top: 0;
+        }
+
+        .link-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: #6a0dad; /* Lighter Purple */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #8b2cdc;
+        }
+
+        /* --- 3. Three Column Section (Rates, Forms, Rules) --- */
+        .content-columns {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 30px;
+        }
+
+        .column {
+            background: white;
+            flex: 1; /* Makes all columns equal width */
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-top: 5px solid #4b0082;
+        }
+
+        .column h3 {
+            color: #4b0082;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .resource-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .resource-list li {
+            margin-bottom: 12px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+
+        .resource-list li a {
+            color: #333;
+            display: block; /* Makes the whole area clickable */
+        }
+
+        .resource-list li a:hover {
+            color: #6a0dad;
+            padding-left: 5px; /* slight movement effect */
+            transition: 0.2s;
+        }
+
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 768px) {
+            .content-columns {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Core Systems Training</h1>
+        <p>Operational Transition & Resource Hub</p>
+    </header>
+
+    <section class="important-links">
+        <h2>Quick Access & Video Overview</h2>
+        <p>Start here for the high-level introduction videos.</p>
+        
+        <div class="link-container">
+            <a href="https://coverwhalebuilder.solartis.net/" class="btn" target="_blank">PROD Builder</a>
+            <a href="https://coverwhalebuilder.uat.solartis.net/" class="btn" target="_blank">UAT Builder</a>
+            <a href="https://coverwhale.atlassian.net/jira/software/projects/SC/list?filter=type%20%3D%20%22Epic%22&hideDone=true&sortBy=status&direction=ASC" class="btn" target="_blank">SC Jira Board</a>
+            <a href="https://docs.google.com/spreadsheets/d/1lPP-zpiYMNbQoFFVjHch7MJnCmPHi8F9/edit?usp=drive_link&ouid=109823401473080667434&rtpof=true&sd=true" class="btn" target="_blank">Excel Rater</a>
+            <a href="https://drive.google.com/drive/folders/1I-YDk38-GXBzGNP3E0_wjZ9QTqItVQjU" class="btn" target="_blank">Solartis Tutorials</a>
+        </div>
+    </section>
+
+    <section class="content-columns">
+        
+        <div class="column">
+            <h3>Rates</h3>
+            <ul class="resource-list">
+                <li><a href="pv1_rate_test.html">PV1 Rates Testing</a></li>
+                <li><a href="adding_rates.html">Adding Rates to New Rate Tables</a></li>
+                <li><a href="adding_rates_2.html">Adding Rates to  Existing Rate Tables</a></li>
+                <li><a href="demote_change_rates.html">Demoting and Updating Existing Rates</a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h3>Forms</h3>
+            <ul class="resource-list">
+                <li><a href="adding_forms.html">Adding New Forms to the Builder</a></li>
+                <li><a href="associating_forms.html">Associating Existing Forms to New Carriers</a></li>
+                <li><a href="form_conditions.html">Adding Form Conditions</a></li>
+                <li><a href="modify_forms.html">Modifying Existing Forms</a></li>
+                <li><a href="form_authoring.html">Form Authoring Tool</a></li>
+                <li><a href="associatetodocument.html">Associating Forms to Documents</a></li>
+                <li><a href="deassociateforms.html">Deassociating Forms from Documents</a></li>
+                <li><a href="reorderingforms.html">Reordering Forms in Documents</a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h3>Rules</h3>
+            <ul class="resource-list">
+                <li><a href="#">Creating Hard Decline Rules</a></li>
+                <li><a href="#">Creating Soft Decline Rules</a></li>
+                <li><a href="#">Creating Eligibility Rules</a></li>
+                <li><a href="#">Demoting and Updating Rules</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="content-columns">
+        
+        <div class="column">
+            <h3>Lookup Tables</h3>
+            <ul class="resource-list">
+                <li><a href="viewlookups.html">Viewing Lookup Table Characteristics</a></li>
+                <li><a href="addlookup.html">Adding Fields to a New Lookup Table</a></li>
+                <li><a href="editlookup.html">Updating an Existing Lookup Table</a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h3>Carrier Management</h3>
+            <ul class="resource-list">
+                <li><a href="#">Adding a New Carrier</a></li>
+                <li><a href="#">Adding Policy Number Blocks</a></li>
+                <li><a href="#">Adding/Editing Jurisdiction Applicability</a></li>
+                <li><a href="#">Updating Carrier Information</a></li>
+                <li><a href="#">Demoting Carriers</a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h3>Change Version Management</h3>
+            <ul class="resource-list">
+                <li><a href="#">Creating a Change Version</a></li>
+                <li><a href="#">Propomoting a Change Version</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+</body>
+</html>

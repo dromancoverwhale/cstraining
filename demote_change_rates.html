@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Module - Core Systems</title>
+    <style>
+        /* --- General Reset & Typography (Same as Home) --- */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a { text-decoration: none; color: inherit; }
+
+        /* --- Header (Simplified) --- */
+        header {
+            background-color: #4b0082; /* Deep Purple */
+            color: white;
+            padding: 20px 20px; /* Slightly smaller than home */
+            text-align: center;
+        }
+
+        header h1 { margin: 0; font-size: 1.8rem; letter-spacing: 1px; }
+
+        /* --- Main Content Container (One Column) --- */
+        .page-container {
+            max-width: 900px; /* Limits width for better readability */
+            margin: 40px auto; /* Centers the container */
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-top: 5px solid #6a0dad;
+        }
+
+        /* --- Navigation / Back Button --- */
+        .nav-bar {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .back-btn {
+            color: #4b0082;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .back-btn:hover { text-decoration: underline; }
+
+        /* --- Typography for Content --- */
+        h2 { color: #4b0082; margin-top: 0; }
+        h3 { color: #555; border-left: 4px solid #6a0dad; padding-left: 10px; margin-top: 30px;}
+        p { margin-bottom: 20px; }
+
+        /* --- Responsive Video Wrapper --- 
+           This makes sure your embedded video resizes perfectly on mobile
+        */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            background: #000;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* --- Action List / Downloads --- */
+        .action-box {
+            background-color: #f4eaff; /* Very light purple bg */
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .action-box ul { margin: 0; padding-left: 20px; }
+        .action-box li { margin-bottom: 10px; }
+        .action-box a { color: #4b0082; font-weight: bold; }
+        .action-box a:hover { text-decoration: underline; }
+
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 768px) {
+            .page-container {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Core Systems Training</h1>
+    </header>
+
+    <div class="page-container">
+        
+        <div class="nav-bar">
+            <a href="index.html" class="back-btn">← Back to Dashboard</a>
+        </div>
+
+        <h2>Solartis Builder: Demoting and Updating Existing Rates</h2>
+
+        <div class="video-wrapper">
+            <iframe src="https://drive.google.com/file/d/1s54Om5vZSw8zo3bJhtBDyx88sQAo_KV_/preview" width="640" height="480" allow="autoplay"></iframe>
+        </div>
+
+              <h3>Notes</h3>
+
+      
+              <h3>1. Changing Rate Values</h3>
+              <p>Use this process to update existing factors (e.g., changing Masonry from 0.90 to 0.95).</p>
+              <ol>
+                  <li>Select the required rate table and click <strong>Actions > Export</strong> to download the file.</li>
+                  <li>Open the file and update the rate values as needed.</li>
+                  <li>In the <strong>"Change Version"</strong> column, enter the value <code>Change</code> for every row you modified.</li>
+                  <li>Save the file and click <strong>Import</strong> to override the table.</li>
+                  <li>Verify the updates in the "Rate Table List" screen.</li>
+              </ol>
+      
+              <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
+      
+              <h3>2. Deleting Rate Values</h3>
+              <p>Use this process to remove specific rows from a live table.</p>
+              <ol>
+                  <li>Export the required rate table.</li>
+                  <li>In the <strong>"Change Version"</strong> column, enter the value <code>Delete</code> against the rows you wish to remove.</li>
+                  <li>Save and <strong>Import</strong> the file.</li>
+                  <li>The rows marked "Delete" will be removed from the table upon import.</li>
+              </ol>
+      
+              <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
+      
+              <h3>3. Demoting Rate Tables</h3>
+              <p>Use this functionality to change the status of rate values from "Live" back to "Dev"].</p>
+              <ol>
+                  <li>Export the required rate table.</li>
+                  <li>In the <strong>"Change Version"</strong> column, enter the value <code>Demote</code> against the required rows.</li>
+                  <li>Save and <strong>Import</strong> the file.</li>
+                  <li>Verify that the status has changed from "Live" to "Dev" in the Rate Table List.</li>
+              </ol>
+
+              <div class="action-box">
+                <strong>📂 Related Documents:</strong>
+                <ul>
+                    <li><a href="demote_change_rates.pdf" target="_blank">Solartis Demote and Update Rates Instructions</a></li>               
+                </ul>
+            </div>
+    </div>
+
+
+
+</body>
+</html>
